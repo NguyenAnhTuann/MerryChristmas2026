@@ -1,0 +1,76 @@
+/* Màu sắc Giáng sinh */
+:root {
+  --color-christmas-red: #C84A31;
+  --color-christmas-green: #006400;
+  --color-background-snow: #F7F7F7;
+  --color-text-light: white;
+  --color-text-dark: #333;
+}
+
+/* Container chính */
+.countdownContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px;
+  background-color: var(--color-background-snow);
+  font-family: 'Arial', sans-serif;
+  color: var(--color-text-dark);
+}
+
+/* Tiêu đề */
+.title {
+  color: var(--color-christmas-red);
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Khối đếm ngược */
+.timeBoxes {
+  display: flex;
+  gap: 25px; /* Tăng khoảng cách một chút */
+  margin-top: 30px;
+}
+
+/* Hộp thời gian riêng lẻ */
+.timeBox {
+  background-color: var(--color-christmas-green); /* Màu xanh lá làm nền */
+  color: var(--color-text-light);
+  border-radius: 12px;
+  padding: 20px 15px;
+  width: 100px;
+  min-height: 100px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeBox:hover {
+    transform: translateY(-5px); /* Hiệu ứng nổi nhẹ khi di chuột */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Giá trị số */
+.value {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+/* Nhãn (Ngày, Giờ, Phút, Giây) */
+.label {
+  font-size: 0.9em;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* Thông báo chúc mừng */
+.celebration {
+  color: var(--color-christmas-red);
+  font-size: 2em;
+  margin-top: 40px;
+}
